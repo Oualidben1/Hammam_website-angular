@@ -1,0 +1,21 @@
+       <!--Pricing Tables-->
+       <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+          <div class="row clearfix">
+  
+              <div class="section-heading" *ngIf="pricing">
+                  <h3>{{pricing.tagline}}</h3>
+                  <h2 class="section-title">{{pricing.title}}</h2>
+                  <p>Les forfaits comprennent : l’accès à la salle de vapeur, piscine, sauna, pierre thermale, salle de repos , Nous fournissons : peignoirs, serviettes, savon noir, chaussures antidérapantes et gant de gommage ``le port du maillot de bain est obligatoire
+                    Les durées sur notre site internet sont uniquement à titre indicatives.</p>
+              </div>
+  
+              <!--Pricing Block-->
+              <div *ngFor="let plan of plans">
+                <app-pricing-block [plan]="plan"></app-pricing-block>
+
+              </div>
+              <!--End Pricing Block--> 
+  
+          </div>
+      </section>
+      <!--End of Pricing Tables-->
